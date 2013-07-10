@@ -1,6 +1,6 @@
 h1. !http://railsapps.github.io/images/rails-36x36.jpg(Rails Bootstrap)! Rails and Twitter Bootstrap
 
-A Rails 4.0 example application that integrates Rails and Twitter Bootstrap.
+Rails 4.0 example application that integrates Rails and Twitter Bootstrap.
 
 "Twitter Bootstrap":http://twitter.github.com/bootstrap/ provides CSS stylesheets and JavaScript code for the visual design of websites. Bootstrap is a framework for client-side (browser-based or “front end”) development, much like Ruby on Rails is a framework for server-side development.
 
@@ -22,7 +22,7 @@ h4. "View the Tutorial":https://tutorials.railsapps.org/rails-bootstrap
 
 The tutorial documents each step to follow to create the application. Every step is documented concisely, so a complete beginner can create this application without any additional knowledge. However, if you are new to Rails, it is best to start with "Learn Rails":http://learn-rails.com/, the beginners' tutorial.
 
-The tutorial goes beyond the basic starter application provided here to explore features of Twitter Bootstrap and show how to customize Rails for Twitter Bootstrap.
+The tutorial goes beyond the basic starter application provided here to explore features of Twitter Bootstrap and shows how to customize Rails for Twitter Bootstrap.
 
 h2. What Is Implemented -- and What Is Not
 
@@ -44,18 +44,18 @@ For example, using the high_voltage gem, you could add pages for:
 
 h4. Database
 
-The application does not require a database. No pages are generated using information from a database and no user-submitted data is saved to a database. However, the sqlite3 gem is included in the Gemfile and Rails ActiveRecord can be used to add database functionality to the web application.
+The application does not require a database. No pages are generated using information from a database and no user-submitted data is saved to a database. However, the sqlite3 gem is included in the Gemfile so Rails ActiveRecord can be used to add database functionality to the web application.
 
 h4. Tutorial Application
 
-Additional features shown in the tutorial (but not included in the GitHub repository) include:
+Additional features implemented in the tutorial include:
 
 * Image carousel
 * Survey form
 * Google spreadsheet datastore
 * Modal window
 
-These features are not needed in a starter application but they demonstrate how Twitter Bootstrap can be used with Rails.
+These features demonstrate how Twitter Bootstrap can be used with Rails but are not needed in a starter application so they are not included in the GitHub repository.
 
 h2. Similar Examples and Tutorials
 
