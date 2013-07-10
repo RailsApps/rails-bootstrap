@@ -361,3 +361,4 @@ h2. Useful Links
 | | "Example Gemfiles for Rails":http://railsapps.github.io/rails-3-2-example-gemfile.html | |
 | | "Rails Application Templates":http://railsapps.github.io/rails-application-templates.html | |
 
+!https://cruel-carlota.pagodabox.com/f339791241ba862267c8d2769a6debbf(githalytics.com alpha)!
