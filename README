@@ -1,0 +1,19 @@
+Rails + Twitter Bootstrap
+============================================
+
+You can use this project as a starting point for a Rails web application. It requires Rails 4 and integrates Twitter Bootstrap.
+
+Twitter Bootstrap
+http://twitter.github.com/bootstrap/
+
+________________________
+
+For more information, please see the updated README file on GitHub:
+
+https://github.com/railsapps/rails-bootstrap
+
+________________________
+
+MIT License
+
+http://www.opensource.org/licenses/mit-license

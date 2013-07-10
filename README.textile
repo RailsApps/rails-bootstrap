@@ -1,0 +1,363 @@
+h1. !http://railsapps.github.io/images/rails-36x36.jpg(Rails Bootstrap)! Rails and Twitter Bootstrap
+
+A Rails 4.0 example application that integrates Rails and Twitter Bootstrap.
+
+"Twitter Bootstrap":http://twitter.github.com/bootstrap/ provides CSS stylesheets and JavaScript code for the visual design of websites. Bootstrap is a framework for client-side (browser-based or “front end”) development, much like Ruby on Rails is a framework for server-side development.
+
+Use this example application as a starter app for your own web applications.
+
+You can build this application in only a few minutes using the "Rails Composer":http://railsapps.github.io/rails-composer/ tool.
+
+h2. !http://twitter-badges.s3.amazonaws.com/t_logo-a.png(Follow on Twitter)!:http://www.twitter.com/rails_apps Follow on Twitter
+
+Follow the project on Twitter: "@rails_apps":http://twitter.com/rails_apps. Please tweet some praise if you like what you've found.
+
+h2. Tutorial
+
+!http://railsapps.github.io/images/tutorial-rails-bootstrap.png(Rails Bootstrap Tutorial)!
+
+A complete tutorial is available:
+
+h4. "View the Tutorial":https://tutorials.railsapps.org/rails-bootstrap
+
+The tutorial documents each step to follow to create the application. Every step is documented concisely, so a complete beginner can create this application without any additional knowledge. However, if you are new to Rails, it is best to start with "Learn Rails":http://learn-rails.com/, the beginners' tutorial.
+
+The tutorial goes beyond the basic starter application provided here to explore features of Twitter Bootstrap and show how to customize Rails for Twitter Bootstrap.
+
+h2. What Is Implemented -- and What Is Not
+
+The example application can be used as the basis for any website. It shows the simplest approach to implementing a website, using practices recommended by experienced Rails developers. With knowledge of Rails, the website can be adapted and customized to your needs. Features include:
+
+* Home page
+* "About" page
+* Navigation bar
+
+h4. Additional Pages
+
+The application uses the "high_voltage gem":https://github.com/thoughtbot/high_voltage for the "About" page. Additional pages can easily be added. The high_voltage gem makes it easy to add pages with static content (text that doesn't change) incorporating elements of a site-wide application layout such as header, navigation links, and footer.
+
+For example, using the high_voltage gem, you could add pages for:
+
+* FAQ
+* News
+* Legal disclaimers
+
+h4. Database
+
+The application does not require a database. No pages are generated using information from a database and no user-submitted data is saved to a database. However, the sqlite3 gem is included in the Gemfile and Rails ActiveRecord can be used to add database functionality to the web application.
+
+h4. Tutorial Application
+
+Additional features shown in the tutorial (but not included in the GitHub repository) include:
+
+* Image carousel
+* Survey form
+* Google spreadsheet datastore
+* Modal window
+
+These features are not needed in a starter application but they demonstrate how Twitter Bootstrap can be used with Rails.
+
+h2. Similar Examples and Tutorials
+
+This is one in a series of Rails example apps and tutorials from the "RailsApps Project":http://railsapps.github.io/. See a list of additional "Rails examples, tutorials, and starter apps":http://railsapps.github.io/rails-examples-tutorials.html. The other examples are more complex.
+
+h2. Accounts You Will Need
+
+We provide instructions to deploy the tutorial application to "Heroku":https://www.heroku.com/ which provides Rails application hosting. It costs nothing to set up a Heroku account and deploy as many applications as you want. To deploy an app to Heroku, you must have a Heroku account. Visit Heroku "to set up an account":https://id.heroku.com/signup/devcenter.
+
+h2. Dependencies
+
+Before generating your application, you will need:
+
+* The Ruby language - version 2.0.0
+* The Rails gem - version 4.0
+
+See the article "Installing Rails":http://railsapps.github.io/installing-rails.html for instructions about setting up Rails and your development environment.
+
+h2. Getting the Application
+
+You have several options for getting the code. You can _fork_, _clone_, or _generate_.
+
+h3. Fork
+
+If you'd like to add features (or bug fixes) to improve the example application, you can fork the GitHub repo and "make pull requests":http://help.github.com/send-pull-requests/. Your code contributions are welcome!
+
+h3. Clone
+
+If you want to copy and customize the app with changes that are only useful for your own project, you can clone the GitHub repo. You'll need to search-and-replace the project name throughout the application. You probably should generate the app instead (see below). To clone:
+
+<pre>
+$ git clone git://github.com/RailsApps/rails-bootstrap.git
+</pre>
+
+You'll need "git":http://git-scm.com/ on your machine. See "Rails and Git":http://railsapps.github.io/rails-git.html.
+
+h3. Generate
+
+If you want to use the project as a starter application, use the "Rails Composer":http://railsapps.github.io/rails-composer/ tool to generate a new version of the example app. You'll be able to give it your own project name when you generate the app. Generating the application gives you additional options.
+
+To build the example application, Rails 4.0 must be installed in your development environment. Run the command:
+
+<pre>
+$ rails new rails-bootstrap -m https://raw.github.com/RailsApps/rails-composer/master/composer.rb
+</pre>
+
+The @$@ character indicates a shell prompt; don't include it when you run the command.
+
+This creates a new Rails app named @rails-bootstrap@ on your computer. You can use a different name if you wish.
+
+You'll see a prompt:
+
+<pre>
+question  Install an example application for Rails 4.0?
+      1)  Build a RailsApps starter application
+      2)  Build a contributed application
+      3)  I want to build my own application
+</pre>
+
+Enter "1" to select *Build a RailsApps starter application*. You'll see a prompt:
+
+<pre>
+question  Starter apps for Rails 4.0. More to come.
+      1)  learn-rails
+      2)  rails-bootstrap
+</pre>
+
+Choose *rails-bootstrap*. The Rails Composer tool may give you other options (other applications may have been added since these notes were written).
+
+The application generator template will ask you for additional preferences:
+
+<pre>
+ question  Web server for development?
+       1)  WEBrick (default)
+       2)  Thin
+       3)  Unicorn
+       4)  Puma
+ question  Web server for production?
+       1)  Same as development
+       2)  Thin
+       3)  Unicorn
+       4)  Puma
+ question  Template engine?
+       1)  ERB
+       2)  Haml
+       3)  Slim
+ question  Continuous testing?
+       1)  None
+       2)  Guard
+   extras  Set a robots.txt file to ban spiders? (y/n)
+   extras  Use or create a project-specific rvm gemset? (y/n)
+   extras  Create a GitHub repository? (y/n)
+</pre>
+
+h4. Web Servers
+
+We recommend Thin in development for speed and less noise in the log files.
+
+If you plan to deploy to Heroku, select Thin as your production webserver. Unicorn is recommended by Heroku but configuration is more complex.
+
+h4. Template Engine
+
+The example application uses the default "ERB" Rails template engine. Optionally, you can use another template engine, such as Haml or Slim. See instructions for "Haml and Rails":http://railsapps.github.io/rails-haml.html.
+
+h4. Other Choices
+
+If you are a beginner, you won't need "continuous testing." If you like to use "Guard":https://github.com/guard/guard, you can select it.
+
+Set a robots.txt file to ban spiders if you want to keep your new site out of Google search results.
+
+It is a good idea to use "RVM":https://rvm.io/, the Ruby Version Manager, and create a project-specific rvm gemset (not available on Windows). See "Installing Rails":http://railsapps.github.io/installing-rails.html.
+
+If you choose to create a GitHub repository, the generator will prompt you for a GitHub username and password.
+
+h4. Troubleshooting
+
+If you get an error "OpenSSL certificate verify failed" or "Gem::RemoteFetcher::FetchError: SSL_connect" see the article "OpenSSL errors and Rails":http://railsapps.github.io/openssl-certificate-verify-failed.html.
+
+If you get an error like this:
+
+<pre>
+Your bundle is complete! Use `bundle show [gemname]` to see where a bundled gem is installed.
+    composer  Running 'after bundler' callbacks.
+The template [...] could not be loaded.
+Error: You have already activated ..., but your Gemfile requires ....
+Using bundle exec may solve this.
+</pre>
+
+It's due to conflicting gem versions. See the article "Rails Error: “You have already activated (…)”":http://railsapps.github.io/rails-error-you-have-already-activated.html.
+
+h3. Edit the README
+
+If you're storing the app in a GitHub repository, please edit the README files to add a description of the app and your contact info. If you don't change the README, people will think I am the author of your version of the application.
+
+h2. Getting Started
+
+See the article "Installing Rails":http://railsapps.github.io/installing-rails.html to make sure your development environment is prepared properly.
+
+h3. Use RVM
+
+I recommend using "rvm":https://rvm.io/, the Ruby Version Manager, to create a project-specific gemset for the application. If you generate the application with the Rails Composer tool, you can create a project-specific gemset.
+
+h3. Gems
+
+Here are the gems used by the application:
+
+* "bootstrap-sass":https://github.com/thomas-mcdonald/bootstrap-sass - Twitter Bootstrap for CSS and JavaScript
+* "figaro":https://github.com/laserlemon/figaro - configuration framework
+* "high_voltage":https://github.com/thoughtbot/high_voltage - for static pages like "about"
+* "simple_form":http://simple-form.plataformatec.com.br/ - forms made easy
+
+These gems make development easier:
+
+* "better_errors":https://github.com/charliesome/better_errors - helps when things go wrong
+* "quiet_assets":https://github.com/evrone/quiet_assets - suppresses distracting messages in the log
+
+h3. Install the Required Gems
+
+If you used the "Rails Composer":http://railsapps.github.io/rails-composer/ tool to generate the example app, the application template script has already run the @bundle install@ command.
+
+If not, you should run the @bundle install@ command to install the required gems on your computer:
+
+<pre>
+$ bundle install
+</pre>
+
+You can check which gems are installed on your computer with:
+
+<pre>
+$ gem list
+</pre>
+
+Keep in mind that you have installed these gems locally. When you deploy the app to another server, the same gems (and versions) must be available.
+
+h3. Configuration File
+
+The application uses the "figaro gem":https://github.com/laserlemon/figaro to set environment variables in the *config/application.yml* file. The *.gitignore* file prevents the *config/application.yml* file from being saved in the git repository so your credentials are kept private. See the article "Rails Environment Variables":http://railsapps.github.io/rails-environment-variables.html for more information.
+
+You can add any credentials to the file *config/application.yml*:
+
+<pre>
+# Add account credentials and API keys here.
+# See http://railsapps.github.io/rails-environment-variables.html
+# This file should be listed in .gitignore to keep your settings secret!
+# Each entry sets a local environment variable and overrides ENV variables in the Unix shell.
+# For example, setting:
+# GMAIL_USERNAME: Your_Gmail_Username
+# makes 'Your_Gmail_Username' available as ENV["GMAIL_USERNAME"]
+# Add application configuration variables here, as shown below.
+#
+# GMAIL_USERNAME: changeme
+# GMAIL_PASSWORD: changeme
+</pre>
+
+The example application does not require any configuration settings. The file *config/application.yml* is provided in case you need to customize the application with features that require configuration settings.
+
+All configuration values in the *config/application.yml* file are available anywhere in the application as environment variables. For example, @ENV["GMAIL_USERNAME"]@ will return the string "Your_Username".
+
+If you prefer, you can delete the *config/application.yml* file and set each value as an environment variable in the Unix shell.
+
+h2. Test the App
+
+You can check that your application runs properly by entering the command:
+
+<pre>
+$ rails server
+</pre>
+
+To see your application in action, open a browser window and navigate to "http://localhost:3000/":http://localhost:3000.
+
+You should see a home page with a placeholder headline.
+
+You should be able to click the navigation link for "About" and see a placeholder page.
+
+Stop the server with Control-C. If you test the app by starting the web server and then leave the server running while you install new gems, you’ll have to restart the server to see any changes. The same is true for changes to configuration files in the config folder. This can be confusing to new Rails developers because you can change files in the app folders without restarting the server. Stop the server each time after testing and you will avoid this issue.
+
+h2. Deploy to Heroku
+
+For your convenience, here is a "Tutorial for Rails on Heroku":http://railsapps.github.io/rails-heroku-tutorial.html. Heroku provides low cost, easily configured Rails application hosting.
+
+You'll need to precompile assets before you commit to git and push to Heroku:
+
+<pre>
+$ RAILS_ENV=production rake assets:precompile
+$ git add -A
+$ git commit -m "assets compiled for Heroku"
+$ git push origin master
+</pre>
+
+If you've set configuration values in the *config/application.yml* file, you'll need to set them as Heroku environment variables. See the article "Rails Environment Variables":http://railsapps.github.io/rails-environment-variables.html for more information.
+
+With the figaro gem, just run:
+
+<pre>
+rake figaro:heroku
+</pre>
+
+Alternatively, you can set Heroku environment variables directly with @heroku config:add@. For example:
+
+<pre>
+$ heroku config:add GMAIL_USERNAME='myname@gmail.com' GMAIL_PASSWORD='secret'
+</pre>
+
+Complete Heroku deployment with:
+
+<pre>
+$ git push heroku master
+</pre>
+
+See the "Tutorial for Rails on Heroku":http://railsapps.github.io/rails-heroku-tutorial.html for details.
+
+h2. Troubleshooting
+
+Problems? Check the "issues":https://github.com/RailsApps/rails-bootstrap/issues.
+
+h2. Documentation
+
+The "Tutorial":https://tutorials.railsapps.org/rails-bootstrap provides additional documentation.
+
+h2. Issues
+
+Please create a "GitHub issue":https://github.com/RailsApps/rails-bootstrap/issues if you identify any problems or have suggestions for improvements.
+
+h2. Where to Get Help
+
+Your best source for help with problems is "Stack Overflow":http://stackoverflow.com/questions/tagged/ruby-on-rails-3. Your issue may have been encountered and addressed by others.
+
+You can also try "Rails Hotline":http://www.railshotline.com/, a free telephone hotline for Rails help staffed by volunteers.
+
+h2. Contributing
+
+If you make improvements to this application, please share with others.
+
+Send the author a message, create an "issue":https://github.com/RailsApps/rails-bootstrap/issues, or fork the project and submit a pull request.
+
+If you add functionality to this application, create an alternative implementation, or build an application that is similar, please contact me and I'll add a note to the README so that others can find your work.
+
+h2. Credits
+
+Daniel Kehoe implemented the application and wrote the tutorial.
+
+Is the app useful to you? Follow the project on Twitter: "@rails_apps":http://twitter.com/rails_apps
+and tweet some praise. I'd love to know you were helped out by what I've put together.
+
+h2. MIT License
+
+"MIT License":http://www.opensource.org/licenses/mit-license
+
+Copyright ©2013 Daniel Kehoe
+
+h2. Useful Links
+
+|_. Getting Started |_. Articles |_. Tutorials |
+| "Rails Tutorial":https://tutorials.railsapps.org/rails-tutorial | "Heroku and Rails":http://railsapps.github.io/rails-heroku-tutorial.html | "Devise with CanCan and Twitter Bootstrap":https://tutorials.railsapps.org/rails3-bootstrap-devise-cancan |
+| "Ruby and Rails":http://railsapps.github.io/ruby-and-rails.html | "Twitter Bootstrap and Rails":http://railsapps.github.io/twitter-bootstrap-rails.html | "Rails Membership Site with Stripe":https://tutorials.railsapps.org/rails-stripe-membership-saas |
+| "Installing Rails":http://railsapps.github.io/installing-rails.html | "JavaScript and Rails":http://railsapps.github.io/rails-javascript-include-external.html | "Rails Subscription Site with Recurly":https://tutorials.railsapps.org/rails-recurly-subscription-saas |
+| "Updating Rails":http://railsapps.github.io/updating-rails.html | "Rails Environment Variables":http://railsapps.github.io/rails-environment-variables.html | "Startup Prelaunch Signup Application":http://railsapps.github.io/tutorial-rails-prelaunch-signup.html |
+| "Rails Composer":http://railsapps.github.io/rails-composer/ | "Git and GitHub with Rails":http://railsapps.github.io/rails-git.html | "Devise with RSpec and Cucumber":http://railsapps.github.io/tutorial-rails-devise-rspec-cucumber.html |
+| "Rails Examples":http://railsapps.github.io/ | "Send Email with Rails":http://railsapps.github.io/rails-send-email.html | "Devise with Mongoid":http://railsapps.github.io/tutorial-rails-mongoid-devise.html |
+| "Rails Starter Apps":http://railsapps.github.io/rails-examples-tutorials.html | "Haml and Rails":http://railsapps.github.io/rails-haml.html | "OmniAuth with Mongoid":http://railsapps.github.io/tutorial-rails-mongoid-omniauth.html |
+| | "Rails Application Layout":http://railsapps.github.io/rails-default-application-layout.html | "Subdomains with Devise":http://railsapps.github.io/tutorial-rails-subdomains.html |
+| | "HTML5 Boilerplate for Rails":http://railsapps.github.io/rails-html5-boilerplate.html | |
+| | "Example Gemfiles for Rails":http://railsapps.github.io/rails-3-2-example-gemfile.html | |
+| | "Rails Application Templates":http://railsapps.github.io/rails-application-templates.html | |
+
