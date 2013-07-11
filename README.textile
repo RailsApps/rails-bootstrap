@@ -14,8 +14,6 @@ Follow the project on Twitter: "@rails_apps":http://twitter.com/rails_apps. Plea
 
 h2. Tutorial
 
-!http://railsapps.github.io/images/tutorial-rails-bootstrap.png(Rails Bootstrap Tutorial)!
-
 A complete tutorial is available:
 
 h4. "View the Tutorial":https://tutorials.railsapps.org/rails-bootstrap
