@@ -19,6 +19,8 @@ GEM
       activesupport (= 4.0.0)
       arel (~> 4.0.0)
     activerecord-deprecated_finders (1.0.3)
+    activerecord-tableless (1.2.0)
+      activerecord (>= 2.3.0)
     activesupport (4.0.0)
       i18n (~> 0.6, >= 0.6.4)
       minitest (~> 4.2)
@@ -47,11 +49,18 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    faraday (0.8.7)
+      multipart-post (~> 1.1)
     figaro (0.7.0)
       bundler (~> 1.0)
       rails (>= 3, < 5)
+    google_drive (0.3.6)
+      nokogiri (>= 1.4.4, != 1.5.2, != 1.5.1)
+      oauth (>= 0.3.6)
+      oauth2 (>= 0.5.0)
     high_voltage (1.2.3)
     hike (1.2.3)
+    httpauth (0.2.0)
     i18n (0.6.4)
     jbuilder (1.4.2)
       activesupport (>= 3.0.0)
@@ -59,12 +68,27 @@ GEM
     jquery-rails (3.0.2)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
+    jwt (0.1.8)
+      multi_json (>= 1.5)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.23)
+    mini_portile (0.5.0)
     minitest (4.7.5)
     multi_json (1.7.7)
+    multi_xml (0.5.4)
+    multipart-post (1.2.0)
+    nokogiri (1.6.0)
+      mini_portile (~> 0.5.0)
+    oauth (0.4.7)
+    oauth2 (0.9.2)
+      faraday (~> 0.8)
+      httpauth (~> 0.2)
+      jwt (~> 0.1.4)
+      multi_json (~> 1.0)
+      multi_xml (~> 0.5)
+      rack (~> 1.2)
     polyglot (0.3.3)
     quiet_assets (1.0.2)
       railties (>= 3.1, < 5.0)
@@ -121,11 +145,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord-tableless
   better_errors
   binding_of_caller
   bootstrap-sass
   coffee-rails (~> 4.0.0)
   figaro
+  google_drive
   high_voltage
   jbuilder (~> 1.2)
   jquery-rails
