@@ -31,10 +31,24 @@
 </div>
 <div class="text-center">
   <h5>Select a Favorite</h5>
-  <%= simple_form_for @visitor do |f| %>
-    <%= f.error_notification %>
-    <%= f.input :favorite, :collection => Visitor::IMAGE_LABELS, label: false, as: :radio_buttons, :item_wrapper_class => 'inline' %>
-    <%= f.input :comment, label: false, :placeholder => 'Add a comment...' %>
-    <%= f.submit "Choose!", :class => "btn btn-primary"%>
-  <% end %>
+  <div id="modal-form" class="modal" style="display: <%= @visitor.errors.any? ? 'block' : 'none';%>">
+    <%= simple_form_for @visitor do |f| %>
+      <div class="modal-header">
+        <a class="close" data-dismiss="modal">&#215;</a>
+        <h3>Select a Favorite</h3>
+      </div>
+      <div class="modal-body">
+        <%= f.error_notification %>
+        <%= f.input :favorite, :collection => Visitor::IMAGE_LABELS, label: false, as: :radio_buttons, :item_wrapper_class => 'inline' %>
+        <%= f.input :comment, label: false, :placeholder => 'Add a comment...' %>
+      </div>
+      <div class="modal-footer">
+        <%= f.submit "Choose!", :class => "btn btn-primary" %>
+        <a class="btn" data-dismiss="modal" href="#">Close</a>
+      </div>
+    <% end %>
+  </div>
+  <div id="call-to-action">
+    <a class="btn btn-primary btn-large" data-toggle="modal" href="#modal-form">Choose!</a>
+  </div>
 </div>
