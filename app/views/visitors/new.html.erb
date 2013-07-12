@@ -1,1 +1,31 @@
-<h3>Home</h3>
+<% content_for :title do %>Rails Bootstrap<% end %>
+<% content_for :description do %>Rails Bootstrap Example<% end %>
+<div id="myCarousel" class="carousel slide">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="http://lorempixel.com/1170/800/city/9">
+      <div class="carousel-caption text-center">
+        <h4>San Francisco</h4>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://lorempixel.com/1170/800/city/7">
+      <div class="carousel-caption text-center">
+        <h4>Sydney</h4>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://lorempixel.com/1170/800/city/6">
+      <div class="carousel-caption text-center">
+        <h4>Paris</h4>
+      </div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>
