@@ -55,7 +55,7 @@ Additional features implemented in the tutorial include:
 * Google spreadsheet datastore
 * Modal window
 
-These features demonstrate how Twitter Bootstrap can be used with Rails but are not needed in a starter application so they are not included in the GitHub repository.
+These features demonstrate how Twitter Bootstrap can be used with Rails but are not needed in a starter application. The additional code is available here in the GitHub repository in the _tutorial_ Git branch.
 
 h2. Similar Examples and Tutorials
 
