@@ -10,22 +10,31 @@
     <div class="item active">
       <img src="http://lorempixel.com/1170/800/city/9">
       <div class="carousel-caption text-center">
-        <h4>San Francisco</h4>
+        <h4><%= Visitor::IMAGE_LABELS[0] %></h4>
       </div>
     </div>
     <div class="item">
       <img src="http://lorempixel.com/1170/800/city/7">
       <div class="carousel-caption text-center">
-        <h4>Sydney</h4>
+        <h4><%= Visitor::IMAGE_LABELS[1] %></h4>
       </div>
     </div>
     <div class="item">
       <img src="http://lorempixel.com/1170/800/city/6">
       <div class="carousel-caption text-center">
-        <h4>Paris</h4>
+        <h4><%= Visitor::IMAGE_LABELS[2] %></h4>
       </div>
     </div>
   </div>
   <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
   <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>
+<div class="text-center">
+  <h5>Select a Favorite</h5>
+  <%= simple_form_for @visitor do |f| %>
+    <%= f.error_notification %>
+    <%= f.input :favorite, :collection => Visitor::IMAGE_LABELS, label: false, as: :radio_buttons, :item_wrapper_class => 'inline' %>
+    <%= f.input :comment, label: false, :placeholder => 'Add a comment...' %>
+    <%= f.submit "Choose!", :class => "btn btn-primary"%>
+  <% end %>
 </div>
