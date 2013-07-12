@@ -364,6 +364,13 @@ Full-Width Styles
   padding-top: 40px;
 }
 
+.imageBlock {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+}
+
 .imageBox {
   margin-left: 30px;
   margin-right: 30px;
