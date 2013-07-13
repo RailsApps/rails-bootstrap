@@ -14,7 +14,7 @@ Follow the project on Twitter: "@rails_apps":http://twitter.com/rails_apps. Plea
 
 h2. Tutorial
 
-!http://railsapps.github.io/images/rails-bootstrap-cover-250px.png(Rails Bootstrap)!https://tutorials.railsapps.org/rails-bootstrap
+!http://railsapps.github.io/images/rails-bootstrap-cover-250px.png(Rails Bootstrap)!:https://tutorials.railsapps.org/rails-bootstrap
 
 A complete tutorial is available:
 
@@ -349,8 +349,10 @@ Copyright ©2013 Daniel Kehoe
 h2. Useful Links
 
 |_. Getting Started |_. Articles |_. Tutorials |
-| "Rails Tutorial":https://tutorials.railsapps.org/rails-tutorial | "Heroku and Rails":http://railsapps.github.io/rails-heroku-tutorial.html | "Devise with CanCan and Twitter Bootstrap":https://tutorials.railsapps.org/rails3-bootstrap-devise-cancan |
-| "Ruby and Rails":http://railsapps.github.io/ruby-and-rails.html | "Twitter Bootstrap and Rails":http://railsapps.github.io/twitter-bootstrap-rails.html | "Rails Membership Site with Stripe":https://tutorials.railsapps.org/rails-stripe-membership-saas |
+| "Learn Rails":http://learn-rails.com/ | "Twitter Bootstrap and Rails":http://railsapps.github.io/twitter-bootstrap-rails.html | "Rails and Bootstrap":http://railsapps.github.io/rails-bootstrap/ |
+| "Ruby and Rails":http://railsapps.github.io/ruby-and-rails.html | "Analytics for Rails":http://railsapps.github.io/rails-google-analytics.html | Rails and Devise |
+| "What is Ruby on Rails?":http://railsapps.github.io/what-is-ruby-rails.html | "Heroku and Rails":http://railsapps.github.io/rails-heroku-tutorial.html | "Devise with CanCan and Twitter Bootstrap":https://tutorials.railsapps.org/rails3-bootstrap-devise-cancan |
+| "Rails Tutorial":https://tutorials.railsapps.org/rails-tutorial | "Twitter Bootstrap and Rails":http://railsapps.github.io/twitter-bootstrap-rails.html | "Rails Membership Site with Stripe":https://tutorials.railsapps.org/rails-stripe-membership-saas |
 | "Installing Rails":http://railsapps.github.io/installing-rails.html | "JavaScript and Rails":http://railsapps.github.io/rails-javascript-include-external.html | "Rails Subscription Site with Recurly":https://tutorials.railsapps.org/rails-recurly-subscription-saas |
 | "Updating Rails":http://railsapps.github.io/updating-rails.html | "Rails Environment Variables":http://railsapps.github.io/rails-environment-variables.html | "Startup Prelaunch Signup Application":http://railsapps.github.io/tutorial-rails-prelaunch-signup.html |
 | "Rails Composer":http://railsapps.github.io/rails-composer/ | "Git and GitHub with Rails":http://railsapps.github.io/rails-git.html | "Devise with RSpec and Cucumber":http://railsapps.github.io/tutorial-rails-devise-rspec-cucumber.html |
