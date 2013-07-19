@@ -14,9 +14,9 @@ Follow the project on Twitter: "@rails_apps":http://twitter.com/rails_apps. Plea
 
 h2. Tutorial
 
-An in-depth tutorial is available (subscription required). Subscriptions provide financial support for the RailsApps project.
+A tutorial is available (subscription required). Subscriptions provide financial support for the RailsApps project.
 
-You can use the starter app without getting the tutorial. The tutorial goes beyond the basic starter application to explore features of Twitter Bootstrap and shows how to customize Rails for Twitter Bootstrap.
+You can use the starter app without getting the tutorial. The tutorial goes beyond the basic starter application to provide an in-depth explanation of the code and explore additional features of Twitter Bootstrap.
 
 !http://railsapps.github.io/images/rails-bootstrap-cover-250px.png(Rails Bootstrap)!:https://tutorials.railsapps.org/rails-bootstrap
 
