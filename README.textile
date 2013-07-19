@@ -16,13 +16,15 @@ h2. Tutorial
 
 !http://railsapps.github.io/images/rails-bootstrap-cover-250px.png(Rails Bootstrap)!:https://tutorials.railsapps.org/rails-bootstrap
 
-A complete tutorial is available:
+An in-depth tutorial is available (subscription required):
 
-h4. "View the Tutorial":https://tutorials.railsapps.org/rails-bootstrap
+h4. "Get the Tutorial":https://tutorials.railsapps.org/rails-bootstrap
+
+Subscriptions provide financial support for the RailsApps project.
 
 The tutorial documents each step to follow to create the application. Every step is documented concisely, so a complete beginner can create this application without any additional knowledge. However, if you are new to Rails, it is best to start with "Learn Rails":http://learn-rails.com/, the beginners' tutorial.
 
-The tutorial goes beyond the basic starter application provided here to explore features of Twitter Bootstrap and shows how to customize Rails for Twitter Bootstrap.
+You can use the starter app without getting the tutorial. The tutorial goes beyond the basic starter application to explore features of Twitter Bootstrap and shows how to customize Rails for Twitter Bootstrap.
 
 h2. What Is Implemented -- and What Is Not
 
