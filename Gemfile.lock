@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/thomas-mcdonald/bootstrap-sass.git
+  revision: c0e12a90ba3e44ab68d3f153411fba3edc400b2a
+  specs:
+    bootstrap-sass (3.0.0.0)
+      sass (~> 3.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -26,16 +33,14 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     arel (4.0.0)
-    atomic (1.1.13)
-    better_errors (0.9.0)
+    atomic (1.1.14)
+    better_errors (1.0.1)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
-    bootstrap-sass (2.3.2.1)
-      sass (~> 3.2)
     builder (3.1.4)
-    coderay (1.0.9)
+    coderay (1.1.0)
     coffee-rails (4.0.0)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0.beta, < 5.0)
@@ -45,7 +50,7 @@ GEM
     coffee-script-source (1.6.3)
     debug_inspector (0.0.2)
     erubis (2.7.0)
-    execjs (2.0.0)
+    execjs (2.0.1)
     figaro (0.7.0)
       bundler (~> 1.0)
       rails (>= 3, < 5)
@@ -61,9 +66,9 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    mime-types (1.24)
+    mime-types (1.25)
     minitest (4.7.5)
-    multi_json (1.7.9)
+    multi_json (1.8.0)
     polyglot (0.3.3)
     quiet_assets (1.0.2)
       railties (>= 3.1, < 5.0)
@@ -103,7 +108,7 @@ GEM
       sprockets (~> 2.8)
     sqlite3 (1.3.8)
     thor (0.18.1)
-    thread_safe (0.1.2)
+    thread_safe (0.1.3)
       atomic
     tilt (1.4.1)
     treetop (1.4.15)
@@ -112,7 +117,7 @@ GEM
     turbolinks (1.3.0)
       coffee-rails
     tzinfo (0.3.37)
-    uglifier (2.2.0)
+    uglifier (2.2.1)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
 
@@ -122,7 +127,7 @@ PLATFORMS
 DEPENDENCIES
   better_errors
   binding_of_caller
-  bootstrap-sass
+  bootstrap-sass!
   coffee-rails (~> 4.0.0)
   figaro
   high_voltage
