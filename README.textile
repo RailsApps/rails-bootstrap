@@ -1,6 +1,6 @@
 h1. !http://railsapps.github.io/images/rails-36x36.jpg(Rails Bootstrap)! Rails and Twitter Bootstrap
 
-Rails 4.0 example application that integrates Rails and Twitter Bootstrap.
+Rails 4.0 example application that integrates Rails and Twitter Bootstrap 2.3.
 
 "Twitter Bootstrap":http://twitter.github.com/bootstrap/ provides CSS stylesheets and JavaScript code for the visual design of websites. Bootstrap is a framework for client-side (browser-based or “front end”) development, much like Ruby on Rails is a framework for server-side development.
 
@@ -11,6 +11,14 @@ You can build this application in only a few minutes using the "Rails Composer":
 h2. !http://twitter-badges.s3.amazonaws.com/t_logo-a.png(Follow on Twitter)!:http://www.twitter.com/rails_apps Follow on Twitter
 
 Follow the project on Twitter: "@rails_apps":http://twitter.com/rails_apps. Please tweet some praise if you like what you've found.
+
+h2. Note: Bootstrap 3
+
+Bootstrap 3.0 was released August 19, 2013.
+
+I recommend using the "SimpleForm":http://simple-form.plataformatec.com.br/ gem with Rails. SimpleForm integrates with Bootstrap 2.3. Unfortunately, SimpleForm does not yet support Bootstrap 3.0 (see "issues":https://github.com/plataformatec/simple_form/pull/864). Additionally, a Bootstrap 3 version of the "bootstrap-sass":https://github.com/thomas-mcdonald/bootstrap-sass gem is not yet released (as of Sept. 16, 2013).
+
+I recommend using Bootstrap 2.3 until these issues are resolved. This example application and the accompanying tutorial use Bootstrap 2.3.
 
 h2. Tutorial
 
