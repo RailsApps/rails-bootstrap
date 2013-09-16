@@ -1,8 +1,8 @@
-h1. !http://railsapps.github.io/images/rails-36x36.jpg(Rails Bootstrap)! Rails and Twitter Bootstrap 3
+h1. !http://railsapps.github.io/images/rails-36x36.jpg(Rails Bootstrap)! Rails and Twitter Bootstrap
 
-Rails 4.0 example application that integrates Rails and Twitter Bootstrap 3.
+Rails 4.0 example application that integrates Rails and Twitter Bootstrap.
 
-"Bootstrap":http://getbootstrap.com/ provides CSS stylesheets and JavaScript code for the visual design of websites. Bootstrap is a framework for client-side (browser-based or “front end”) development, much like Ruby on Rails is a framework for server-side development.
+"Twitter Bootstrap":http://twitter.github.com/bootstrap/ provides CSS stylesheets and JavaScript code for the visual design of websites. Bootstrap is a framework for client-side (browser-based or “front end”) development, much like Ruby on Rails is a framework for server-side development.
 
 Use this example application as a starter app for your own web applications.
 
@@ -55,7 +55,7 @@ Additional features implemented in the tutorial include:
 * Google spreadsheet datastore
 * Modal window
 
-These features demonstrate how Twitter Bootstrap can be used with Rails but are not needed in a starter application. The additional code is available here in the GitHub repository in the Git branch named _tutorial_.
+These features demonstrate how Twitter Bootstrap can be used with Rails but are not needed in a starter application. The additional code is available here in the GitHub repository in the _tutorial_ Git branch.
 
 h2. Similar Examples and Tutorials
 
