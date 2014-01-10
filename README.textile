@@ -77,7 +77,7 @@ h2. Dependencies
 
 Before generating your application, you will need:
 
-* The Ruby language - version 2.0.0
+* The Ruby language - version 2.1.0
 * The Rails gem - version 4.0
 
 See the article "Installing Rails":http://railsapps.github.io/installing-rails.html for instructions about setting up Rails and your development environment.
@@ -129,6 +129,8 @@ Enter "1" to select *Build a RailsApps starter application*. You'll see a prompt
 question  Starter apps for Rails 4.0. More to come.
       1)  learn-rails
       2)  rails-bootstrap
+      3)  rails-foundation
+      4)  rails-devise
 </pre>
 
 Choose *rails-bootstrap*. The Rails Composer tool may give you other options (other applications may have been added since these notes were written).
