@@ -10,7 +10,7 @@ You can build this application in only a few minutes using the "Rails Composer":
 
 h2. Bootstrap 3
 
-Bootstrap 3.0 was released August 19, 2013. This example application uses Rail 4.0 and Bootstrap 3.0.
+Bootstrap 3.0 was released August 19, 2013. This example application uses Rail 4.1 and Bootstrap 3.0.
 
 h4. SimpleForm Issues
 
@@ -110,7 +110,7 @@ h3. Generate
 
 If you want to use the project as a starter application, use the "Rails Composer":http://railsapps.github.io/rails-composer/ tool to generate a new version of the example app. You'll be able to give it your own project name when you generate the app. Generating the application gives you additional options.
 
-To build the example application, Rails 4.0 must be installed in your development environment. Run the command:
+To build the example application, Rails 4.1 must be installed in your development environment. Run the command:
 
 <pre>
 $ rails new rails-bootstrap -m https://raw.github.com/RailsApps/rails-composer/master/composer.rb
