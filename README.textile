@@ -24,7 +24,7 @@ If you are new to Rails, start with "Learn Ruby on Rails":http://learn-rails.com
 
 Our "Rails Bootstrap":https://tutorials.railsapps.org/rails-bootstrap tutorial goes beyond the basic starter application to explain the code in depth and explore additional features of Bootstrap.
 
-h4. "Get the Tutorials":https://tutorials.railsapps.org/rails-bootstrap
+"Join the RailsApps project":http://railsapps.github.io/ and get both the book and the tutorial.
 
 !http://railsapps.github.io/images/learn-rails-287x324.png(Learn Ruby on Rails)!:https://tutorials.railsapps.org/learn-ruby-on-rails !http://railsapps.github.io/images/rails-bootstrap-cover-250px.png(Rails Bootstrap)!:https://tutorials.railsapps.org/rails-bootstrap
 
