@@ -1,19 +1,58 @@
-Rails + Twitter Bootstrap
-============================================
+Rails Bootstrap
+========================
 
-You can use this project as a starting point for a Rails web application. It requires Rails 4 and integrates Twitter Bootstrap.
-
-Twitter Bootstrap
-http://twitter.github.com/bootstrap/
-
-________________________
-
-For more information, please see the updated README file on GitHub:
-
-https://github.com/railsapps/rails-bootstrap
+This application was generated with the rails_apps_composer gem:
+https://github.com/RailsApps/rails_apps_composer
+provided by the RailsApps Project:
+http://railsapps.github.io/
 
 ________________________
 
-MIT License
+Recipes:
 
-http://www.opensource.org/licenses/mit-license
+* apps4
+* controllers
+* core
+* email
+* extras
+* frontend
+* gems
+* git
+* init
+* models
+* prelaunch
+* railsapps
+* readme
+* routes
+* saas
+* setup
+* testing
+* views
+
+Preferences:
+
+* git: true
+* apps4: rails-bootstrap
+* database: default
+* unit_test: false
+* integration: false
+* fixtures: false
+* frontend: bootstrap3
+* email: none
+* authentication: false
+* devise_modules: false
+* authorization: false
+* starter_app: false
+* form_builder: false
+* quiet_assets: true
+* local_env_file: false
+* better_errors: true
+* dev_webserver: webrick
+* prod_webserver: same
+* templates: erb
+* continuous_testing: none
+* rvmrc: true
+
+________________________
+
+License
