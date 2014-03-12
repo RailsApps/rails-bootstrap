@@ -10,7 +10,7 @@ You can build this application in only a few minutes using the "Rails Composer":
 
 h2. Resources for Rails and Bootstrap
 
-Please "join the RailsApps project":http://railsapps.github.io/ to get both the book and the Quickstart Guide. Subscriptions provide financial support for the RailsApps project.
+Please "join the RailsApps project":http://railsapps.github.io/twitter-bootstrap-rails.html to get both the book and the Quickstart Guide. Subscriptions provide financial support for the RailsApps project.
 
 !http://railsapps.github.io/images/landing/bootstrap-quickstart-185x191.png(Bootstrap Quickstart Guide)!:http://railsapps.github.io/twitter-bootstrap-rails.html !http://railsapps.github.io/images/rails-bootstrap-cover-250px.png(Rails Bootstrap)!:http://railsapps.github.io/twitter-bootstrap-rails.html
 
