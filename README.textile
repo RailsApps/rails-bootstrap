@@ -53,9 +53,9 @@ Additional features implemented in the tutorial include:
 
 These features demonstrate how Bootstrap can be used with Rails but are not needed in a starter application.
 
-h4. SimpleForm Issues
+h4. SimpleForm
 
-Developers often use the "SimpleForm":http://simple-form.plataformatec.com.br/ gem with Rails. SimpleForm integrates with Bootstrap 2.3. Unfortunately, SimpleForm does not fully support Bootstrap 3 (see "issues":https://github.com/plataformatec/simple_form/pull/864).
+Developers often use the "SimpleForm":http://simple-form.plataformatec.com.br/ gem with Rails. SimpleForm version SimpleForm 3.1.0.rc1 (and newer) "integrates with Bootstrap 3.2":http://blog.plataformatec.com.br/2014/04/bootstrap-3-support-for-simple-form/.
 
 h2. Similar Examples and Tutorials
 
@@ -75,7 +75,7 @@ h2. Dependencies
 
 Before generating your application, you will need:
 
-* The Ruby language - version 2.1.1
+* The Ruby language - version 2.1
 * The Rails gem - version 4.1
 
 See the article "Installing Rails":http://railsapps.github.io/installing-rails.html for instructions about setting up Rails and your development environment.
@@ -233,7 +233,7 @@ Keep in mind that you have installed these gems locally. When you deploy the app
 
 h3. Configuration File
 
-To keep some data private, and consolidate configuration settings in a single location, we store credentials in the *config/secrets.yml* file. Include the *config/secrets.yml* file in the *.gitignore* file to prevent the file from being saved in the git repository. See the article "Rails Environment Variables":http://railsapps.github.io/rails-environment-variables.html for more information.
+To consolidate configuration settings in a single location, store credentials in the *config/secrets.yml* file. To keep your credentials private, use Unix environment variables to set your credentials. See the article "Rails Environment Variables":http://railsapps.github.io/rails-environment-variables.html for more information.
 
 This is the default *config/secrets.yml* file:
 
@@ -244,7 +244,7 @@ development:
 
 The example application does not require any configuration settings. The file *config/secrets.yml* is provided in case you need to customize the application with features that require configuration settings.
 
-All configuration values in the *config/secrets.yml* file are available anywhere in the application as variables. For example, you could add @gmail_username: Your_Username@ and use it as @Rails.application.secrets.gmail_username@ elsewhere in the application. If you wish, you can set each value from an environment variable in the Unix shell. For example, @gmail_username: <%= ENV["GMAIL_USERNAME"] %>@.
+If you don't want to use Unix environment variables, you can set each value directly in the *config/secrets.yml* file. The file must be in your git repository when you deploy to Heroku. However, you shouldn't save the file to a public GitHub repository where other people can see your credentials.
 
 h3. Change your Application's Secret Token
 
