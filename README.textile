@@ -86,7 +86,7 @@ h3. Cloud
 
 Click the button below to install the app on "Nitrous.io":https://www.nitrous.io/, a hosted development environment. Nitrous.io is free for small projects. See "Ruby on Rails with Nitrous.io":http://railsapps.github.io/rubyonrails-nitrous-io.html for more information.
 
-"!https://d3o0mnbgv6k92a.cloudfront.net/assets/hack-l-v1-3cc067e71372f6045e1949af9d96095b.png(Hack RailsApps/learn-rails on Nitrous.IO)!":https://www.nitrous.io/hack_button?source=embed&runtime=rails&repo=RailsApps%2Frails-bootstrap&file_to_open=nitrous.txt
+"!https://d3o0mnbgv6k92a.cloudfront.net/assets/hack-l-v1-3cc067e71372f6045e1949af9d96095b.png(Hack RailsApps on Nitrous.IO)!":https://www.nitrous.io/hack_button?source=embed&runtime=rails&repo=RailsApps%2Frails-bootstrap&file_to_open=nitrous.txt
 
 h3. Local
 
