@@ -1,0 +1,29 @@
+ATTENTION
+============================================
+
+If you are viewing this file in the Nitrous.io development environment...
+
+You must update your Nitrous.io environment to use Ruby 2.1.1 (or newer).
+
+For instructions, see the article 'Ruby on Rails with Nitrous.io':
+http://railsapps.github.io/rubyonrails-nitrous-io.html
+
+Use the console to launch the application:
+
+$ cd workspace
+$ cd rails-bootstrap
+$ bundle install
+$ rails server
+
+Select 'Preview' from the menu to see the application running.
+
+________________________
+
+Nitrous.io is a hosted development environment:
+https://www.nitrous.io/
+
+For more information, see the article 'Ruby on Rails with Nitrous.io':
+http://railsapps.github.io/rubyonrails-nitrous-io.html
+
+________________________
+
