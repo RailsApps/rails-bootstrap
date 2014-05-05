@@ -1,3 +1,3 @@
-RailsBootstrap::Application.routes.draw do
+Rails.application.routes.draw do
   root :to => "visitors#index"
 end
