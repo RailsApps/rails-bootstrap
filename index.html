@@ -1,132 +1,386 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Rails Bootstrap: Example app integrates Rails 4.1 with Bootstrap." />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Rails Bootstrap &#183; RailsApps</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Bootstrap and Rails  &middot; Installation Guide and Tutorial &middot; RailsApps</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Rails 4.1 and Bootstrap (formerly Twitter Bootstrap). Shows how to install Bootstrap for use with Rails. Plus a tutorial.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.2.2/css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.2.2/css/foundation.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+    <link rel="stylesheet" href="http://railsapps.github.io/css/landing.css">
+    <!-- Social button scripts-->
+    <link href="https://plus.google.com/117374718581973393536" rel="publisher" />
+    <script type="text/javascript">
+      var analytics=analytics||[];(function(){var e=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group","on","once","off"],t=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)analytics[e[n]]=t(e[n])})(),analytics.load=function(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+e+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)};
+      analytics.load("l1stqfqqbf");
+    </script>
   </head>
-
   <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/RailsApps/rails-bootstrap">View on GitHub</a>
-
-          <h1 id="project_title">Rails Bootstrap</h1>
-          <h2 id="project_tagline">A Rails 4.1 starter application with Bootstrap 3.0.</h2>
-
-            <section id="downloads">
-
-            </section>
-
-            <section id="header-links">
-              <ul class="quick-links">
-                <!-- add li for more links -->
+    <div class="container">
+      <div class="alert-box text-center">Installing Bootstrap for Rails 4.1. Guide and tutorial from the RailsApps Project.
+      </div>
+      <header>
+        <div class="row">
+          <div class="large-4 columns">
+            <h1>RailsApps</h1>
+          </div>
+          <div class="large-8 columns">
+            <ul class="testimonials" data-orbit data-options="timer_speed: 20000; variable_height: false; bullets: false; navigation_arrows: false; pause_on_hover: true; resume_on_mouseout: true;">
+              <li data-orbit-slide="testify-1">
+                <div class="row">
+                  <div class="small-2 columns right">
+                    <img src="http://railsapps.github.io/images/landing/rickquantz.png" alt="Testimonial" title="Testimonial" />
+                  </div>
+                  <div class="small-8 columns">
+                    <blockquote class="testify">
+                      <p>
+                        Thanks so much for this. There are so many Rails tutorials for absolute beginners, and lots of stuff that assumes expert knowledge, but not much, besides practice, to span the gap.
+                        <cite> <strong>Rick Quantz, <a href="http://news.ycombinator.com/item?id=2545768">HackerNews, 13 May 2011</a></strong>
+                        </cite>
+                      </p>
+                    </blockquote>
+                  </div>
+              </li>
+              <li data-orbit-slide="testify-1">
+                <div class="row">
+                  <div class="small-2 columns right">
+                    <img src="http://railsapps.github.io/images/landing/josephmay.png" alt="Testimonial" title="Testimonial" />
+                  </div>
+                  <div class="small-8 columns">
+                    <blockquote class="testify">
+                      <p>
+                        I will be starting a new job here in SF, due in no small part to what I've learned here from the RailsApp Project.
+                        <cite> <strong>Joseph May, 23 Dec 2013</a></strong>
+                        </cite>
+                      </p>
+                    </blockquote>
+                  </div>
+              </li>
+              <li data-orbit-slide="testify-2">
+                <div class="row">
+                  <div class="small-2 columns right">
+                    <img src="http://railsapps.github.io/images/landing/justin.png" alt="Testimonial" title="Testimonial" />
+                  </div>
+                  <div class="small-8 columns">
+                    <blockquote class="testify">
+                      <p>
+                        I would like to say thank you for such a precise guide. It helped me understand how things work a great deal quicker than all of the bits and pieces I was reading around the web.
+                        <cite> <strong>Justin Booth</strong>
+                        </cite>
+                      </p>
+                    </blockquote>
+                  </div>
+              </li>
+              <li data-orbit-slide="testify-3">
+                <div class="row">
+                  <div class="small-2 columns right">
+                    <img src="http://railsapps.github.io/images/landing/warwickpoole.png" alt="Testimonial" title="Testimonial" />
+                  </div>
+                  <div class="small-8 columns">
+                    <blockquote class="testify">
+                      <p>
+                        @danielkehoe is somewhat of a hero with the stuff he puts on @github
+                        <cite> <strong>Warwick Poole, <a href="https://twitter.com/#!/warwickp/status/86987405327994880">Twitter, 2 July 2011</a></strong>
+                        </cite>
+                      </p>
+                    </blockquote>
+                  </div>
+              </li>
+              <li data-orbit-slide="testify-4">
+                <div class="row">
+                  <div class="small-2 columns right">
+                    <img src="http://railsapps.github.io/images/landing/petercooper.jpg" alt="Testimonial" title="Testimonial" />
+                  </div>
+                  <div class="small-8 columns">
+                    <blockquote class="testify">
+                      <p>
+                        Crazy Deep!
+                        <cite> <strong>Peter Cooper, <a href="http://j.mp/ieyXxu">Ruby Weekly, 19 May 2011</a></strong>
+                        </cite>
+                      </p>
+                    </blockquote>
+                  </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="row toprow">
+        <div class="large-12 columns">
+          <span class="mainseparator"></span><hr>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-7 columns">
+          <div class="row">
+            <div class="medium-12 columns">
+              <h3>Resources for Rails and Bootstrap</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="medium-3 columns">
+              <img class="img-circle" src="http://railsapps.github.com/images/readme.png" alt="Bootstrap Quickstart Guide" title="Bootstrap Quickstart Guide">
+              <br />
+              <br />
+            </div>
+            <div class="medium-3 columns text-left">
+              <h5>Bootstrap Quickstart Guide</h5>
+            </div>
+            <div class="medium-6 columns text-left features-list">
+              <p>Contents:</p>
+              <ul>
+                <li>installation of Bootstrap</li>
+                <li>the application layout</li>
+                <li>flash messages</li>
+                <li>navigation links</li>
+                <li>form helpers</li>
               </ul>
             </div>
-
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-
-<p>The <a href="https://github.com/RailsApps/rails-bootstrap">rails-bootstrap</a> application is on GitHub.</p>
-
-<p>Generate a starter app in minutes using an application template:</p>
-
-<pre>
-$ rails new rails-bootstrap -m https://raw.github.com/RailsApps/rails-composer/master/composer.rb</pre>
-
-<p>You get a Rails application with Bootstrap. Customize as you wish.</p>
-
-<div class="imageBlock">
-<div class="imageBox">
-  <a href="https://github.com/RailsApps/rails-bootstrap/"><img src="http://railsapps.github.com/images/readme.png" title="Rails Bootstrap" alt="Rails Bootstrap" height="100" width="100"></a>
-  <br />
-  <a href="https://github.com/RailsApps/rails-bootstrap/">Readme</a>
-</div>
-
-<div class="imageBox">
-  <a href="https://tutorials.railsapps.org/rails-bootstrap"><img src="http://railsapps.github.com/images/rails-bootstrap-cover-250px.png" title="Rails Bootstrap" alt="Rails Bootstrap" height="201" width="155"></a>
-  <br />
-  <a href="https://tutorials.railsapps.org/rails-bootstrap">Tutorial</a>
-</div>
-</div>
-
-<p>Join the <a href="http://railsapps.github.io/">RailsApps project</a> and <a href="https://tutorials.railsapps.org/rails-bootstrap">get the tutorial</a> for an in-depth introduction to Rails and Bootstrap.</p>
-
-<div class="bs-links">
-  <ul class="quick-links">
-    <li class="tweet-btn">
-      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://railsapps.github.com/rails-bootstrap/" data-count="horizontal" data-via="rails_apps" data-text="Rails starter app with Bootstrap">Tweet</a>
-    </li>
-    <li class="follow-btn">
-      <a href="https://twitter.com/rails_apps" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @rails_apps</a>
-    </li>
-    <li>
-      <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=RailsApps&repo=rails-bootstrap&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="112px" height="20px"></iframe>
-    </li>
-    <li>
-      <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=RailsApps&repo=rails-bootstrap&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px"></iframe>
-    </li>
-  </ul>
-</div>
-
-
-  <div class="comments">
-    <p class="choices">Is this helpful? Your encouragement fuels the project. Please tweet or add a comment. Issues? Couldn't get something to work? It's best to <a href="http://github.com/RailsApps/rails-bootstrap/issues">open an issue on GitHub</a> so we can help you.</p>
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'railsapps'; // required: replace example with your forum shortname
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-  </div><!-- class="comments" -->
-
-  </section>
-</div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">From the RailsApps Project. &#169; 2012 Daniel Kehoe. “College” symbol by Saman Bemel-Benrud, “Newspaper” symbol by The Noun Project, “Lecturer” symbol by Zbigniew Flakus, from The Noun Project.</p>
+          </div>
+          <div class="row">
+            <div class="medium-3 columns">
+              <img src="http://railsapps.github.io/images/landing/rails-bootstrap-114x140.png" alt="Rails and Bootstrap" title="Rails and Bootstrap">
+              <br />
+              <br />
+            </div>
+            <div class="medium-3 columns text-left">
+              <h5>Rails and Bootstrap Book</h5>
+            </div>
+            <div class="medium-6 columns text-left features-list">
+              <p>All of the above, plus:</p>
+              <ul>
+                <li>build an application, with</li>
+                <li>image carousel</li>
+                <li>modal windows</li>
+                <li>forms and more</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="medium-3 columns">
+              <img class="img-circle" src="http://railsapps.github.io/images/landing/repo-rails-bootstrap-186x191.png" alt="Bootstrap Example Application" title="Bootstrap Example Application">
+              <br />
+              <br />
+            </div>
+            <div class="medium-3 columns text-left">
+              <h5>Bootstrap Example Application <a href="https://github.com/RailsApps/rails-bootstrap/">on GitHub</a></h5>
+            </div>
+            <div class="medium-6 columns text-left features-list">
+              <p>Use as a starter app:</p>
+              <ul>
+                <li>open source</li>
+                <li>maintained and working code</li>
+                <li>clone from GitHub, or</li>
+                <li>generate with Rails Composer</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="large-5 columns">
+          <div class="row">
+            <div class="small-6 columns">
+              <ul class="pricing-table">
+                <li class="title"><small>SUBSCRIPTION</small></li>
+                <li class="price price-basic">
+                  <span class="round">$19</span>
+                </li>
+                <li class="description">Per Month</li>
+                <li class="description"><em>Bootstrap Quickstart Guide</em><br />plus other tutorials</li>
+                <li class="description">With two full-length books:<br /><em>Rails and Bootstrap</em><br /><em>Learn Ruby on Rails</em></li>
+                <li class="description">Support the project for updates and more guides</li>
+                <li class="cta-button">
+                  <a class="button radius" href="https://tutorials.railsapps.org/users/sign_up?plan=pro">SUBSCRIBE</a>
+                </li>
+              </ul>
+            </div>
+            <div class="small-6 columns">
+              <ul class="pricing-table">
+                <ul class="pricing-table">
+                  <li class="title"><small>ORGANIZATION</small></li>
+                  <li class="price price-basic">
+                    <span class="round">$349</span>
+                  </li>
+                  <li class="description">Per Year</li>
+                  <li class="bullet-item">All Tutorials</li>
+                  <li class="bullet-item">Books Included</li>
+                  <li class="bullet-item">For Your Entire Team</li>
+                  <li class="bullet-item">Invite Multiple Users</li>
+                  <li class="cta-button">
+                    <a class="button price-basic radius" href="https://tutorials.railsapps.org/users/sign_up?plan=hero">SUBSCRIBE</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <span class="separator"></span><hr>
+        </div>
+      </div>
+      <article class="row">
+        <div class="large-4 columns">
+          <section class="four columns">
+            <h4 class="uptext">Rails 4.1 Examples</h4>
+            <p>Our example applications show how to use Bootstrap with Devise (authentication), OmniAuth (authentication), or Pundit (access control). All are open source, thanks to support from our subscribers.</p>
+          </section>
+        </div>
+        <div class="large-4 columns">
+          <section class="four columns">
+            <h4 class="uptext">Composer</h4>
+            <p>Use our <a href="http://railsapps.github.io/rails-composer/">Rails Composer</a> tool to generate a Bootstrap starter app with a choice of popular gems. Save time and effort when you start any project. Again, open source, thanks to our subscribers.</p>
+          </section>
+        </div>
+        <div class="large-4 columns">
+          <section class="four columns">
+            <h4 class="uptext">Books and Guides</h4>
+            <p>Our books and guides are available exclusively to paid subscribers. Your monthly subscription provides financial support for the project. In exchange, we give you in-depth documentation.</p>
+          </section>
+        </div>
+      </article>
+      <div class="row">
+        <div class="large-6 columns">
+          <div class="row">
+            <div class="">
+              <div class="">
+                <div class="small-4 columns">
+                  <div class="alert label">EXAMPLES</div>
+                  <ul class="checkmarks">
+                    <li>
+                      <a href="http://railsapps.github.io/rails-bootstrap/">Bootstrap and Rails</a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/RailsApps/rails-foundation/">Foundation and Rails</a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/RailsApps/rails-omniauth/">OmniAuth</a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/RailsApps/rails-devise/">Devise</a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/RailsApps/rails-devise-pundit/">Devise and Pundit</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="small-4 columns">
+                  <div class="alert label">QUICKSTART GUIDES
+                  </div>
+                  <ul class="checkmarks">
+                    <li>
+                      <a href="http://railsapps.github.io/rails-devise/">Devise Quickstart</a>
+                    </li>
+                    <li>
+                      <a href="http://railsapps.github.io/rspec.html">RSpec Quickstart</a>
+                    </li>
+                    <li>
+                      <a href="http://railsapps.github.io/twitter-bootstrap-rails.html">Bootstrap Quickstart</a>
+                    </li>
+                    <li>
+                      <a href="http://railsapps.github.io/rails-foundation.html">Foundation Quickstart</a>
+                    </li>
+                  </ul>
+                  <div class="alert label">BOOKS
+                  </div>
+                  <ul class="checkmarks">
+                    <li>
+                      <a href="http://learn-rails.com/learn-ruby-on-rails.html"><em>Learn Ruby on Rails</em></a>
+                    </li>
+                    <li>
+                      <a href="http://railsapps.github.io/twitter-bootstrap-rails.html"><em>Bootstrap and Rails</em></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="small-4 columns">
+                  <div class="alert label">ARTICLES
+                  </div>
+                  <ul class="checkmarks">
+                    <li><a href="http://railsapps.github.io/what-is-ruby-rails.html">What is Ruby on Rails?</a></li>
+                    <li><a href="http://railsapps.github.io/installrubyonrails-mac.html">Install Ruby on Rails - Mac OS X</a></li>
+                    <li><a href="http://railsapps.github.io/installrubyonrails-ubuntu.html">Install Ruby on Rails - Ubuntu</a></li>
+                    <li><a href="http://railsapps.github.io/rubyonrails-nitrous-io.html">Install Ruby on Rails - Nitrous.io</a></li>
+                    <li><a href="http://railsapps.github.io/rails-google-analytics.html">Analytics for Rails</a></li>
+                    <li><a href="http://railsapps.github.io/rails-heroku-tutorial.html">Heroku and Rails</a></li>
+                    <li><a href="http://railsapps.github.io/rails-javascript-include-external.html">JavaScript and Rails</a></li>
+                    <li><a href="http://railsapps.github.io/rails-environment-variables.html">Rails Env Variables</a></li>
+                    <li><a href="http://railsapps.github.io/rails-git.html">Git and Rails</a></li>
+                    <li><a href="http://railsapps.github.io/rails-send-email.html">Send Email with Rails</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="large-3 columns">
+          <img src="http://railsapps.github.io/images/landing/tools.png" alt="Tools" title="Tools">
+          <h4 class="text-center uptext">Tools</h4>
+          <p class="text-center">In addition to the <a href="http://railsapps.github.io/rails-composer/">Rails Composer</a> tool, your subscription supports development and maintenance of the <a href="https://github.com/RailsApps/rails_layout/">Rails Layout</a> gem and the <a href="https://github.com/RailsApps/rails_apps_composer">RailsAppsComposer</a> gem.</p>
+        </div>
+        <div class="large-3 columns">
+          <img src="http://railsapps.github.io/images/landing/paperbackstack.jpg" alt="The Book" title="The Book">
+          <h4 class="text-center uptext">The Books</h4>
+          <p class="text-center"><em><a href="http://learn-rails.com/learn-ruby-on-rails.html">Learn Ruby on Rails</a></em> is the acclaimed book for beginners. <em>Rails and Bootstrap</em> covers installation and use of Bootstrap. All available here, with a subscription.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="panel cta-panel">
+            <h4>Support the project. Sign up now!</h4>
+            <div class="row">
+              <div class="large-8 columns">
+                <p>
+                Your participation insures the survival of a project that benefits Rails developers all over the world. Plus, you get exclusive access to books and tutorials so you can build and learn.
+                </p>
+              </div>
+              <div class="large-4 columns">
+                <a class="button large radius" href="https://tutorials.railsapps.org/users/sign_up?plan=pro">Subscribe Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns small-centered">
+          <h4>
+            What people are saying...
+          </h3>
+          <div class="row">
+            <div class="large-12 columns">
+              <span class="mainseparator"></span>
+              <hr>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="comments" id="comments">
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                    var disqus_shortname = 'railsapps'; // required: replace example with your forum shortname
+                    /* * * DON'T EDIT BELOW THIS LINE * * */
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+              </div><!-- class="comments" -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="row footer-cover">
+        <div class="large-12 columns copyright">&copy; 2014 RailsApps All Rights Reserved.
+        </div>
       </footer>
     </div>
-
-    <!-- javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-    <script src="assets/js/google-code-prettify/prettify.js"></script>
-
-    <!-- Analytics
-    ================================================== -->
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-5109366-14");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
-
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.0.2/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
   </body>
 </html>
