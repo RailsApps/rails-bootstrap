@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.1'
+ruby '2.1.2'
 gem 'rails', '4.1.1'
 gem 'sqlite3'
 gem 'sass-rails', '~> 4.0.3'
@@ -20,7 +20,7 @@ group :development do
 end
 group :development, :test do
   gem 'factory_girl_rails'
-  gem 'rspec-rails', '>= 3.0.0.beta2'
+  gem 'rspec-rails'
 end
 group :test do
   gem 'capybara'
