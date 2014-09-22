@@ -1,0 +1,20 @@
+{
+  "name": "RailsApps rails-bootstrap",
+  "description": "Rails starter app with the Bootstrap front-end framework.",
+  "keywords": [
+    "Ruby 2",
+    "Rails 4",
+    "Kehoe",
+    "RailsApps",
+    "Example",
+    "Starter",
+    "Bootstrap"
+  ],
+  "website": "http://railsapps.github.io/rails-bootstrap/",
+  "repository": "https://github.com/RailsApps/rails-bootstrap",
+  "logo": "https://avatars3.githubusercontent.com/u/788200",
+  "scripts": {},
+  "env": {
+    "RAILS_ENV": "production"
+  }
+}

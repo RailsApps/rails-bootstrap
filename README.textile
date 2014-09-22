@@ -1,5 +1,7 @@
 h1. !http://railsapps.github.io/images/rails-36x36.jpg(Rails Bootstrap)! Rails and Bootstrap
 
+"!https://www.herokucdn.com/deploy/button.png(Deploy to Heroku)!":https://heroku.com/deploy "!https://d3o0mnbgv6k92a.cloudfront.net/assets/hack-l-v1-3cc067e71372f6045e1949af9d96095b.png(Hack RailsApps on Nitrous.IO)!":https://www.nitrous.io/hack_button?source=embed&runtime=rails&repo=RailsApps%2Frails-bootstrap&file_to_open=nitrous.txt
+
 Rails 4.1 example application that integrates Rails and Bootstrap 3.2.
 
 "Bootstrap":http://getbootstrap.com/ (formerly Twitter Bootstrap) provides CSS stylesheets and JavaScript code for the visual design of websites. Bootstrap is a framework for client-side (browser-based or “front end”) development, much like Ruby on Rails is a framework for server-side development.
@@ -81,12 +83,6 @@ Before generating your application, you will need:
 See the article "Installing Rails":http://railsapps.github.io/installing-rails.html for instructions about setting up Rails and your development environment.
 
 h2. Getting the Application
-
-h3. Cloud
-
-Click the button below to install the app on "Nitrous.io":https://www.nitrous.io/, a hosted development environment. Nitrous.io is free for small projects. See "Ruby on Rails with Nitrous.io":http://railsapps.github.io/rubyonrails-nitrous-io.html for more information.
-
-"!https://d3o0mnbgv6k92a.cloudfront.net/assets/hack-l-v1-3cc067e71372f6045e1949af9d96095b.png(Hack RailsApps on Nitrous.IO)!":https://www.nitrous.io/hack_button?source=embed&runtime=rails&repo=RailsApps%2Frails-bootstrap&file_to_open=nitrous.txt
 
 h3. Local
 
@@ -197,6 +193,20 @@ It is a good idea to use "RVM":https://rvm.io/, the Ruby Version Manager, and cr
 h4. Troubleshooting
 
 If you get an error "OpenSSL certificate verify failed" or "Gem::RemoteFetcher::FetchError: SSL_connect" see the article "OpenSSL errors and Rails":http://railsapps.github.io/openssl-certificate-verify-failed.html.
+
+h3. Cloud
+
+h4. Heroku
+
+Click the button to deploy to Heroku:
+
+"!https://www.herokucdn.com/deploy/button.png(Deploy to Heroku)!":https://heroku.com/deploy
+
+h4. Nitrous.io
+
+Click the button below to install the app on "Nitrous.io":https://www.nitrous.io/, a hosted development environment. Nitrous.io is free for small projects. See "Ruby on Rails with Nitrous.io":http://railsapps.github.io/rubyonrails-nitrous-io.html for more information.
+
+"!https://d3o0mnbgv6k92a.cloudfront.net/assets/hack-l-v1-3cc067e71372f6045e1949af9d96095b.png(Hack RailsApps on Nitrous.IO)!":https://www.nitrous.io/hack_button?source=embed&runtime=rails&repo=RailsApps%2Frails-bootstrap&file_to_open=nitrous.txt
 
 h3. Edit the README
 
