@@ -196,14 +196,6 @@ If you get an error "OpenSSL certificate verify failed" or "Gem::RemoteFetcher::
 
 h3. Cloud
 
-h4. Heroku
-
-Click the button to deploy to Heroku:
-
-"!https://www.herokucdn.com/deploy/button.png(Deploy to Heroku)!":https://heroku.com/deploy
-
-h4. Nitrous.io
-
 Click the button below to install the app on "Nitrous.io":https://www.nitrous.io/, a hosted development environment. Nitrous.io is free for small projects. See "Ruby on Rails with Nitrous.io":http://railsapps.github.io/rubyonrails-nitrous-io.html for more information.
 
 "!https://d3o0mnbgv6k92a.cloudfront.net/assets/hack-l-v1-3cc067e71372f6045e1949af9d96095b.png(Hack RailsApps on Nitrous.IO)!":https://www.nitrous.io/hack_button?source=embed&runtime=rails&repo=RailsApps%2Frails-bootstrap&file_to_open=nitrous.txt
@@ -298,7 +290,17 @@ Stop the server with Control-C. If you test the app by starting the web server a
 
 h2. Deploy to Heroku
 
-For your convenience, here is a "Tutorial for Rails on Heroku":http://railsapps.github.io/rails-heroku-tutorial.html. Heroku provides low cost, easily configured Rails application hosting.
+Heroku provides low cost, easily configured Rails application hosting.
+
+h4. One Click Deployment
+
+For one-click deployment, click the button to deploy to Heroku:
+
+"!https://www.herokucdn.com/deploy/button.png(Deploy to Heroku)!":https://heroku.com/deploy
+
+h4. From the Command Line
+
+Alternatively, you can deploy from the command line.
 
 You'll need to precompile assets before you commit to git and push to Heroku:
 
