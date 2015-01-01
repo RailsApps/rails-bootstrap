@@ -2,7 +2,7 @@ h1. !http://railsapps.github.io/images/rails-36x36.jpg(Rails Bootstrap)! Rails a
 
 "!https://www.herokucdn.com/deploy/button.png(Deploy to Heroku)!":https://heroku.com/deploy "!https://d3o0mnbgv6k92a.cloudfront.net/assets/hack-l-v1-3cc067e71372f6045e1949af9d96095b.png(Hack RailsApps on Nitrous.IO)!":https://www.nitrous.io/hack_button?source=embed&runtime=rails&repo=RailsApps%2Frails-bootstrap&file_to_open=nitrous.txt
 
-Rails 4.1 example application that integrates Rails and Bootstrap 3.2.
+Rails 4.2 example application that integrates Rails and Bootstrap 3.3.
 
 "Bootstrap":http://getbootstrap.com/ (formerly Twitter Bootstrap) provides CSS stylesheets and JavaScript code for the visual design of websites. Bootstrap is a framework for client-side (browser-based or “front end”) development, much like Ruby on Rails is a framework for server-side development.
 
@@ -12,7 +12,7 @@ You can build this application in only a few minutes using the "Rails Composer":
 
 h2. Resources for Rails and Bootstrap
 
-The RailsApps project provides both a "book and Quickstart Guide":http://railsapps.github.io/twitter-bootstrap-rails.html to help you get up to speed with Bootstrap and Rails. Please "join the RailsApps project":http://railsapps.github.io/twitter-bootstrap-rails.html to get both the book and the Quickstart Guide. Subscriptions provide financial support for the RailsApps project.
+The RailsApps project provides a "Quickstart Guide":http://railsapps.github.io/twitter-bootstrap-rails.html to help you get up to speed with Bootstrap and Rails. Please "join the RailsApps project":http://railsapps.github.io/twitter-bootstrap-rails.html to get the Quickstart Guide. Subscriptions provide financial support for the RailsApps project.
 
  !http://railsapps.github.io/images/rails-bootstrap-cover-250px.png(Rails Bootstrap)!:http://railsapps.github.io/twitter-bootstrap-rails.html
 
@@ -44,21 +44,6 @@ h4. Database
 
 The application does not require a database. No pages are generated using information from a database and no user-submitted data is saved to a database. However, the sqlite3 gem is included in the Gemfile so Rails ActiveRecord can be used to add database functionality to the web application.
 
-h4. Tutorial Application
-
-Additional features implemented in the tutorial include:
-
-* Image carousel
-* Survey form
-* Google spreadsheet datastore
-* Modal window
-
-These features demonstrate how Bootstrap can be used with Rails but are not needed in a starter application.
-
-h4. SimpleForm
-
-Developers often use the "SimpleForm":http://simple-form.plataformatec.com.br/ gem with Rails. SimpleForm version SimpleForm 3.1.0.rc1 (and newer) "integrates with Bootstrap 3.2":http://blog.plataformatec.com.br/2014/04/bootstrap-3-support-for-simple-form/.
-
 h2. Similar Examples and Tutorials
 
 This is one in a series of Rails example apps and tutorials from the "RailsApps Project":http://railsapps.github.io/. See a list of additional "Rails examples, tutorials, and starter apps":http://railsapps.github.io/rails-examples-tutorials.html. Related example applications may be useful:
@@ -77,8 +62,8 @@ h2. Dependencies
 
 Before generating your application, you will need:
 
-* The Ruby language - version 2.1
-* The Rails gem - version 4.1
+* The Ruby language - version 2.2
+* The Rails gem - version 4.2
 
 See the article "Installing Rails":http://railsapps.github.io/installing-rails.html for instructions about setting up Rails and your development environment.
 
@@ -106,7 +91,7 @@ h4. Generate
 
 If you want to use the project as a starter application, use the "Rails Composer":http://railsapps.github.io/rails-composer/ tool to generate a new version of the example app. You'll be able to give it your own project name when you generate the app. Generating the application gives you additional options.
 
-To build the example application, Rails 4.1 must be installed in your development environment. Run the command:
+To build the example application, Rails 4.2 must be installed in your development environment. Run the command:
 
 <pre>
 $ rails new rails-bootstrap -m https://raw.github.com/RailsApps/rails-composer/master/composer.rb
@@ -119,22 +104,26 @@ This creates a new Rails app named @rails-bootstrap@ on your computer. You can u
 You'll see a prompt:
 
 <pre>
-question  Build a starter application?
-      1)  Build a RailsApps example application
-      2)  Contributed applications
-      3)  Custom application
+option  Build a starter application?
+    1)  Build a RailsApps example application
+    2)  Contributed applications
+    3)  Custom application
 </pre>
 
 Enter "1" to select *Build a RailsApps example application*. You'll see a prompt:
 
 <pre>
-question  Starter apps for Rails 4.1. More to come.
-      1)  learn-rails
-      2)  rails-bootstrap
-      3)  rails-foundation
-      4)  rails-omniauth
-      5)  rails-devise
-      6)  rails-devise-pundit
+option  Choose a starter application.
+    1)  learn-rails
+    2)  rails-bootstrap
+    3)  rails-foundation
+    4)  rails-mailinglist-activejob
+    5)  rails-omniauth
+    6)  rails-devise
+    7)  rails-devise-roles
+    8)  rails-devise-pundit
+    9)  rails-signup-download
+   10)  rails-stripe-checkout
 </pre>
 
 Choose *rails-bootstrap*. The Rails Composer tool may give you other options (other applications may have been added since these notes were written).
@@ -170,9 +159,7 @@ The application generator template will ask you for additional preferences:
 
 h4. Web Servers
 
-We recommend Thin in development for speed and less noise in the log files.
-
-If you plan to deploy to Heroku, select Thin as your production webserver. Unicorn is recommended by Heroku but configuration is more complex.
+If you plan to deploy to Heroku, select Unicorn as your production webserver.
 
 h4. Template Engine
 
@@ -302,12 +289,7 @@ h4. From the Command Line
 
 Alternatively, you can deploy from the command line.
 
-You'll need to precompile assets before you commit to git and push to Heroku:
-
 <pre>
-$ RAILS_ENV=production rake assets:precompile
-$ git add -A
-$ git commit -m "assets compiled for Heroku"
 $ git push origin master
 </pre>
 
@@ -362,7 +344,7 @@ h2. MIT License
 
 "MIT License":http://www.opensource.org/licenses/mit-license
 
-Copyright ©2013-14 Daniel Kehoe
+Copyright ©2013-15 Daniel Kehoe
 
 h2. Useful Links
 
