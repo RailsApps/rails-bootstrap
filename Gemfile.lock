@@ -1,3 +1,8 @@
+PATH
+  remote: /Users/danielkehoe/workspace/railsapps/rails_apps_pages
+  specs:
+    rails_apps_pages (0.6.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -226,6 +231,7 @@ DEPENDENCIES
   quiet_assets
   rails (= 4.2.0)
   rails_12factor
+  rails_apps_pages!
   rails_layout
   rspec-rails
   sass-rails (~> 5.0)
