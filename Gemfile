@@ -19,7 +19,6 @@ group :development do
   gem 'quiet_assets'
   gem 'rails_layout'
   gem 'spring-commands-rspec'
-  gem 'rails_apps_pages', :path => "/Users/danielkehoe/workspace/railsapps/rails_apps_pages"
 end
 group :development, :test do
   gem 'factory_girl_rails'
