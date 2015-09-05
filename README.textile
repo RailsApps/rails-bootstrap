@@ -1,7 +1,5 @@
 h1. !http://railsapps.github.io/images/rails-36x36.jpg(Rails Bootstrap)! Rails and Bootstrap
 
-"!https://www.herokucdn.com/deploy/button.png(Deploy to Heroku)!":https://heroku.com/deploy "!https://d3o0mnbgv6k92a.cloudfront.net/assets/hack-l-v1-3cc067e71372f6045e1949af9d96095b.png(Hack RailsApps on Nitrous.IO)!":https://www.nitrous.io/hack_button?source=embed&runtime=rails&repo=RailsApps%2Frails-bootstrap&file_to_open=nitrous.txt
-
 Rails 4.2 example application that integrates Rails and Bootstrap 3.3.
 
 "Bootstrap":http://getbootstrap.com/ (formerly Twitter Bootstrap) provides CSS stylesheets and JavaScript code for the visual design of websites. Bootstrap is a framework for client-side (browser-based or “front end”) development, much like Ruby on Rails is a framework for server-side development.
@@ -181,12 +179,6 @@ h4. Troubleshooting
 
 If you get an error "OpenSSL certificate verify failed" or "Gem::RemoteFetcher::FetchError: SSL_connect" see the article "OpenSSL errors and Rails":http://railsapps.github.io/openssl-certificate-verify-failed.html.
 
-h3. Cloud
-
-Click the button below to install the app on "Nitrous.io":https://www.nitrous.io/, a hosted development environment. Nitrous.io is free for small projects. See "Ruby on Rails with Nitrous.io":http://railsapps.github.io/rubyonrails-nitrous-io.html for more information.
-
-"!https://d3o0mnbgv6k92a.cloudfront.net/assets/hack-l-v1-3cc067e71372f6045e1949af9d96095b.png(Hack RailsApps on Nitrous.IO)!":https://www.nitrous.io/hack_button?source=embed&runtime=rails&repo=RailsApps%2Frails-bootstrap&file_to_open=nitrous.txt
-
 h3. Edit the README
 
 If you're storing the app in a GitHub repository, please edit the README files to add a description of the app and your contact info. If you don't change the README, people will think I am the author of your version of the application.
@@ -279,15 +271,9 @@ h2. Deploy to Heroku
 
 Heroku provides low cost, easily configured Rails application hosting.
 
-h4. One Click Deployment
-
-For one-click deployment, click the button to deploy to Heroku:
-
-"!https://www.herokucdn.com/deploy/button.png(Deploy to Heroku)!":https://heroku.com/deploy
-
 h4. From the Command Line
 
-Alternatively, you can deploy from the command line.
+You can deploy from the command line.
 
 <pre>
 $ git push origin master
@@ -362,5 +348,3 @@ h2. Useful Links
 | "Rails Composer":http://railsapps.github.io/rails-composer/ |                                        "Rails Application Templates":http://railsapps.github.io/rails-application-templates.html |
 | "Rails Examples":http://railsapps.github.io/ |                                                       "Rails Product Planning":http://railsapps.github.io/rails-product-planning.html |
 | "Rails Starter Apps":http://railsapps.github.io/rails-examples-tutorials.html |                      "Rails Project Management":http://railsapps.github.io/rails-project-management.html |
-
-!https://cruel-carlota.pagodabox.com/f339791241ba862267c8d2769a6debbf(githalytics.com alpha)!
