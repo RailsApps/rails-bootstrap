@@ -10,7 +10,7 @@ You can build this application in only a few minutes using the "Rails Composer":
 
 h4. Quickstart Guide
 
-The RailsApps project provides a "Rails and Bootstrap":http://railsapps.github.io/rails-bootstrap.html Quickstart Guide with details about integrating Rails and Bootstrap.
+The RailsApps project provides a "Rails and Bootstrap":https://tutorials.railsapps.org/ Quickstart Guide with details about integrating Rails and Bootstrap.
 
 h4. !http://railsapps.github.io/images/join/join-railsapps.png(Join RailsApps)!:http://railsapps.github.io/
 
