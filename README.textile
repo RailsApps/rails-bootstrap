@@ -8,17 +8,21 @@ Use this example application as a starter app for your own web applications.
 
 You can build this application in only a few minutes using the "Rails Composer":http://railsapps.github.io/rails-composer/ tool.
 
-h2. Resources for Rails and Bootstrap
+h4. Quickstart Guide
 
-The RailsApps project provides a "Quickstart Guide":http://railsapps.github.io/twitter-bootstrap-rails.html to help you get up to speed with Bootstrap and Rails. Please "join the RailsApps project":http://railsapps.github.io/twitter-bootstrap-rails.html to get the Quickstart Guide. Subscriptions provide financial support for the RailsApps project.
+The RailsApps project provides a "Rails and Bootstrap":http://railsapps.github.io/rails-bootstrap.html Quickstart Guide with details about integrating Rails and Bootstrap.
 
- !http://railsapps.github.io/images/rails-bootstrap-cover-250px.png(Rails Bootstrap)!:http://railsapps.github.io/twitter-bootstrap-rails.html
+h4. !http://railsapps.github.io/images/join/join-railsapps.png(Join RailsApps)!:http://railsapps.github.io/
 
-If you are new to Rails, start with "Learn Ruby on Rails":http://learn-rails.com/learn-ruby-on-rails.html, the best Rails book for beginners.
+h4. From the RailsApps Project
 
-h2. !http://twitter-badges.s3.amazonaws.com/t_logo-a.png(Follow on Twitter)!:http://www.twitter.com/rails_apps Follow on Twitter
+The "RailsApps":http://railsapps.github.io/ open source project offers starter applications and tutorials for Rails developers. Generate the applications with the Rails Composer tool.
 
-Follow the project on Twitter: "@rails_apps":http://twitter.com/rails_apps. Please tweet some praise if you like what you've found.
+All the code is explained in the Capstone Rails Tutorials. You can purchase the "Capstone Rails Tutorials":https://tutorials.railsapps.org/ to support the project.
+
+h4. If You Are New to Rails
+
+If you're new to Rails, see "What is Ruby on Rails?":http://railsapps.github.io/what-is-ruby-rails.html, the book "Learn Ruby on Rails":http://learn-rails.com/learn-ruby-on-rails.html, and recommendations for a "Rails tutorial":https://tutorials.railsapps.org/rails-tutorial.
 
 h2. What Is Implemented -- and What Is Not
 
