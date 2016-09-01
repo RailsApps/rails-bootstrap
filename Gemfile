@@ -15,7 +15,7 @@ group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
-gem 'bootstrap-sass'
+gem 'bootstrap', '~> 4.0.0.alpha3.1'
 gem 'high_voltage'
 group :development do
   gem 'better_errors'

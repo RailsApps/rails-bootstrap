@@ -1,19 +1,20 @@
-<%# navigation styled for Bootstrap 3.0 %>
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <%= link_to 'Home', root_path, class: 'navbar-brand' %>
-    </div>
-    <div class="collapse navbar-collapse">
+<!-- <%# navigation styled for Bootstrap 4.0 %> -->
+<div class="container">
+  <nav class="navbar navbar-dark bg-inverse">
+    <ul class="nav navbar-nav clearfix">
+      <li class="nav-item">
+        <button class="navbar-toggler hidden-sm-up nav-link" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
+          &#9776;
+        </button>
+      </li>
+    </ul>
+
+    <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+      <%= link_to "Rails bootstrap", root_path, class: 'navbar-brand' %>
+
       <ul class="nav navbar-nav">
-        <%= render 'layouts/navigation_links' %>
+        <%= render 'layouts/navigation_links' %>   
       </ul>
     </div>
-  </div>
-</nav>
+  </nav>
+</div>

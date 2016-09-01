@@ -1,6 +1,6 @@
 h1. !http://railsapps.github.io/images/rails-36x36.jpg(Rails Bootstrap)! Rails and Bootstrap
 
-Rails 4.2 example application that integrates Rails and Bootstrap 3.3.
+Rails 4.2 example application that integrates Rails and Bootstrap 4.0 alpha 3.1.
 
 "Bootstrap":http://getbootstrap.com/ (formerly Twitter Bootstrap) provides CSS stylesheets and JavaScript code for the visual design of websites. Bootstrap is a framework for client-side (browser-based or “front end”) development, much like Ruby on Rails is a framework for server-side development.
 
