@@ -8,6 +8,6 @@ class ApplicationController < ActionController::Base
   private
 
   def show_flash
-    flash[:success] = "Found the about page!" if request.path == '/pages/about'
+    flash.now[:notice] = "Found the about page!" if request.path == '/pages/about'
   end
 end
