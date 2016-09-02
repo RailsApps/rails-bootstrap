@@ -7,18 +7,24 @@ img {
   @extend .img-fluid;
   margin: 0 auto;
 }
+// override for the 'Home' navigation link
+.navbar-brand {
+  font-size: inherit;
+  }
 
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create your own classes
 // to make views framework-neutral
 .column {
   @extend .col-md-6;
+  @extend .text-xs-center;
 }
 .form {
   @extend .col-md-6;
 }
 .form-centered {
   @extend .col-md-6;
+  @extend .text-xs-center;
 }
 .submit {
   @extend .btn;
@@ -30,9 +36,6 @@ img {
 // to make views framework-neutral
 main {
   @extend .container;
-//   background-color: #eee;
-//   padding-bottom: 80px;
-//   width: 100%;
   margin-top: 30px; // accommodate the navbar
 }
 
