@@ -1,6 +1,6 @@
 h1. !http://railsapps.github.io/images/rails-36x36.jpg(Rails Bootstrap)! Rails and Bootstrap
 
-Rails 4.2 example application that integrates Rails and Bootstrap 4.0 alpha 3.1.
+Rails 5.0 example application that integrates Rails and Bootstrap 4.0 alpha 3.1.
 
 "Bootstrap":http://getbootstrap.com/ (formerly Twitter Bootstrap) provides CSS stylesheets and JavaScript code for the visual design of websites. Bootstrap is a framework for client-side (browser-based or “front end”) development, much like Ruby on Rails is a framework for server-side development.
 
@@ -31,6 +31,7 @@ The example application can be used as the basis for any website. It shows the s
 * Home page
 * "About" page
 * Navigation bar
+* Flash messages
 
 h4. Additional Pages
 
@@ -64,8 +65,8 @@ h2. Dependencies
 
 Before generating your application, you will need:
 
-* The Ruby language - version 2.2
-* The Rails gem - version 4.2
+* The Ruby language - version 2.3.1
+* The Rails gem - version 5.0
 
 See the article "Installing Rails":http://railsapps.github.io/installing-rails.html for instructions about setting up Rails and your development environment.
 
@@ -93,7 +94,7 @@ h4. Generate
 
 If you want to use the project as a starter application, use the "Rails Composer":http://railsapps.github.io/rails-composer/ tool to generate a new version of the example app. You'll be able to give it your own project name when you generate the app. Generating the application gives you additional options.
 
-To build the example application, Rails 4.2 must be installed in your development environment. Run the command:
+To build the example application, Rails 5.0 must be installed in your development environment. Run the command:
 
 <pre>
 $ rails new rails-bootstrap -m https://raw.github.com/RailsApps/rails-composer/master/composer.rb
@@ -129,35 +130,6 @@ option  Choose a starter application.
 </pre>
 
 Choose *rails-bootstrap*. The Rails Composer tool may give you other options (other applications may have been added since these notes were written).
-
-The application generator template will ask you for additional preferences:
-
-<pre>
- question  Web server for development?
-       1)  WEBrick (default)
-       2)  Thin
-       3)  Unicorn
-       4)  Puma
-       5)  Phusion Passenger (Apache/Nginx)
-       6)  Phusion Passenger (Standalone)
- question  Web server for production?
-       1)  Same as development
-       2)  Thin
-       3)  Unicorn
-       4)  Puma
-       5)  Phusion Passenger (Apache/Nginx)
-       6)  Phusion Passenger (Standalone)
- question  Template engine?
-       1)  ERB
-       2)  Haml
-       3)  Slim
- question  Test framework?
-       1)  None
-       2)  RSpec with Capybara
-   extras  Set a robots.txt file to ban spiders? (y/n)
-   extras  Create a GitHub repository? (y/n)
-   extras  Use or create a project-specific rvm gemset? (y/n)
-</pre>
 
 h4. Web Servers
 
@@ -199,13 +171,12 @@ h3. Gems
 
 Here are the gems used by the application:
 
-* "bootstrap-sass":https://github.com/thomas-mcdonald/bootstrap-sass - Bootstrap for CSS and JavaScript
+* "bootstrap-rubygem":https://github.com/twbs/bootstrap-rubygem - Bootstrap 4 for CSS and JavaScript
 * "high_voltage":https://github.com/thoughtbot/high_voltage - for static pages like "about"
 
 These gems make development easier:
 
 * "better_errors":https://github.com/charliesome/better_errors - helps when things go wrong
-* "quiet_assets":https://github.com/evrone/quiet_assets - suppresses distracting messages in the log
 * "rails_layout":https://github.com/RailsApps/rails_layout - generates files for an application layout
 
 h3. Install the Required Gems
@@ -334,7 +305,7 @@ h2. MIT License
 
 "MIT License":http://www.opensource.org/licenses/mit-license
 
-Copyright ©2013-15 Daniel Kehoe
+Copyright ©2013-16 Daniel Kehoe
 
 h2. Useful Links
 
