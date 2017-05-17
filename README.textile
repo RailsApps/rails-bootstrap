@@ -1,6 +1,6 @@
 h1. !http://railsapps.github.io/images/rails-36x36.jpg(Rails Bootstrap)! Rails and Bootstrap
 
-Rails 5.0 example application that integrates Rails and Bootstrap 4.0.
+Rails 5.1 example application that integrates Rails and Bootstrap 4.0.
 
 "Bootstrap":http://getbootstrap.com/ (formerly Twitter Bootstrap) provides CSS stylesheets and JavaScript code for the visual design of websites. Bootstrap is a framework for client-side (browser-based or “front end”) development, much like Ruby on Rails is a framework for server-side development.
 
@@ -65,8 +65,8 @@ h2. Dependencies
 
 Before generating your application, you will need:
 
-* The Ruby language - version 2.3.1
-* The Rails gem - version 5.0
+* The Ruby language - version 2.4.1
+* The Rails gem - version 5.1
 
 See the article "Installing Rails":http://railsapps.github.io/installing-rails.html for instructions about setting up Rails and your development environment.
 
@@ -94,7 +94,7 @@ h4. Generate
 
 If you want to use the project as a starter application, use the "Rails Composer":http://railsapps.github.io/rails-composer/ tool to generate a new version of the example app. You'll be able to give it your own project name when you generate the app. Generating the application gives you additional options.
 
-To build the example application, Rails 5.0 must be installed in your development environment. Run the command:
+To build the example application, Rails 5.1 must be installed in your development environment. Run the command:
 
 <pre>
 $ rails new rails-bootstrap -m https://raw.github.com/RailsApps/rails-composer/master/composer.rb
